@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1">
+        <!-- fav icon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+        <!-- fav icon -->
+        <title>Crypto Essence</title>
+        <link rel="icon" href="favicon.png" type="image/png">
+        <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="css/responsive.css" rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+        <!--76e69e01edd021752b378a3afddabb756f7ab80fbed2bb52f8d8b6a3f939b42e-->
+        <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.js"></script>
+        <script type="text/javascript" src="js/wow.js"></script>
+        <script type="text/javascript" src="js/classie.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110397078-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-110397078-1');
+		</script>
+
+
+		
+
+    </head>
+<body>
+<nav class="main-nav-outer" id="nav">
+	<div class="container">
+         <ul class="main-nav">
+			<li><a href="EssenceWhitePaper.pdf">Whitepaper</a></li>
+			<li><a href="index.html#project">Project</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+			<li><a href="index.html"><img src="img/logo.png" alt="Crypto Essence Logo" class="header-logo"></a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="explorer.html">Explorer</a></li>
+			<li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+    </div>
+</nav>
+
+<section class="main-section" id="service">
+	<div class="container">
+    	<style>
+			#token-txs-11 {
+				line-height: 1.8;
+				border-radius: 8px;
+				max-width: 100% !important;
+				background-blend-mode: darken;
+				background-color: rgba(0,0,0,0.9);
+			}
+			#token-txs-11 .txs.big-screen-table td .tx-amount{
+				display: inline-block;
+				width: 150px;
+				white-space: nowrap;
+			}
+			#token-txs-11 .txs.big-screen-table td .tx-link{
+				max-width: 120px;
+			}
+			#token-txs-11 .txs.big-screen-table td .tx-link:last-child{
+				max-width: 150px;
+			}
+			#token-txs-11 .txs.big-screen-table td .tx-amount a:nth-child(1){
+				max-width: 110px !important;
+			}
+			#token-txs-11 .txs.big-screen-table td .tx-amount  a:nth-child(2){
+				max-width: 50px !important;
+			}
+
+		</style>
+		
+
+		<h1>CryptoEssence Explorer</h1>
+		<div id="token-txs-11"></div>
+		<script type="text/javascript">
+			if (typeof (eWgs) === 'undefined') {
+				document.write('<scr' + 'ipt src="https://api.ethplorer.io/widget.js?' + new Date().getTime().toString().substr(0, 7) + '" async></scr' + 'ipt>');
+				var eWgs = [];
+			}
+			eWgs.push(function () {
+				ethplorerWidget.init(
+					'#token-txs-11', // Placeholder element
+					'tokenHistory', // Widget type
+					{
+						address: '0x00b9034425e357bf61b4abeb22299ec4a62c725b', // keep empty to show all tokens
+						limit: 10, // Number of records to show
+					},
+					{
+						header: '<div class="txs-header">CryptoEssence Recent Transactions</div>', // customized header
+						loader: '<div class="txs-loading">* L * O * A * D * I * N * G *<br><small>Please wait...</small></div>', // customized loader
+						bigScreenTable: '<tr><td>%from% <span class="tx-send">sent</span> <span class="tx-amount">%amount% %token%</span> <span class="tx-send">to</span> %to% <span class="tx-send">at</span><span class="tx-date"> %datetime%</span></td></tr>'
+
+					}
+
+				);
+			});
+		</script>
+
+
+	</div>
+</section>
+
+
+<section class="main-section" id="service">
+	<div class="container">
+	<h1>CryptoEssence Graph</h1>
+    	<div id="token-history-grouped-1"></div>
+			<script type="text/javascript">
+			if (typeof (eWgs) === 'undefined') {
+				document.write('<scr' + 'ipt src="https://api.ethplorer.io/widget.js?' + new Date().getTime().toString().substr(0, 7) + '" async></scr' + 'ipt>');
+				var eWgs = [];
+			}
+			eWgs.push(function () {
+				ethplorerWidget.init(
+					'#token-history-grouped-1', // Placeholder element
+					'tokenHistoryGrouped', // Widget type
+					{
+						// token address
+						'address': '0x00b9034425e357bf61b4abeb22299ec4a62c725b',
+						options: {
+							'title': 'CryptoEssence',
+							'pointSize': 10,
+							'vAxis': {
+								'title': 'Token operations',
+							}
+						}
+					}
+
+				);
+			});
+			</script>
+
+
+
+	</div>
+</section>
+
+
+<div class="container">
+        <section class="main-section contact" id="contact">
+        <div class="row">
+        	<div class="col-lg-12 col-sm-7 wow fadeInLeft">
+            	<div class="contact-info-box address clearfix">
+                	<h3 style="color: #fff"><i class=" icon-map-marker" style="color: #fff"></i>Address:</h3>
+                	<span>ONE RAFFLES PLACE, LEVEL 1 TOWER 1, SINGAPORE 048616</span>
+                </div>
+                <div class="contact-info-box email clearfix">
+                	<h3 style="color: #fff"><i class="fa-pencil" style="color: #fff"></i>email:</h3>
+                	<span>info@cryptoessence.com</span>
+                </div>
+                <ul class="social-link">
+                	<li class="twitter"><a href="https://twitter.com/crypto_essence"><i class="fa-twitter"></i></a></li>
+                	<li class="facebook"><a href="https://www.facebook.com/CryptoEssence-938091269672578/"><i class="fa-facebook"></i></a></li>
+                    <li class="github"><a href="https://github.com/cryptoessence"><i class="fa-github"></i></a></li>
+					<li class="reddit"><a href="https://www.reddit.com/r/cryptoessence/"><i class="fa-reddit"></i></a></li>
+					<li class="slack"><a href="https://cryptoessence.slack.com/messages/C870MREFN/"><i class="fa-slack"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+        <span class="copyright">&copy; Crypto Essence All Rights Reserved</span>
+    </div>
+</footer>
+
+</body>
+</html>
